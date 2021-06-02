@@ -1,10 +1,10 @@
 let modInfo = {
-	name: "The ??? Tree",
-	id: "mymod",
-	author: "nobody",
-	pointsName: "points",
-	discordName: "",
-	discordLink: "",
+	name: "The Study Tree",
+	id: "CJM's mod",
+	author:"CaoJinMing0628",
+	pointsName: " study points",
+	discordName: "none",
+	discordLink: "none",
 	initialStartPoints: new Decimal (10), // Used for hard resets and new players
 	
 	offlineLimit: 1,  // In hours
@@ -12,7 +12,7 @@ let modInfo = {
 
 // Set your version in num and name
 let VERSION = {
-	name: "Literally nothing",
+	name: "0.1",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
@@ -54,7 +54,7 @@ var displayThings = [
 
 // Determines when the game "ends"
 function isEndgame() {
-	return player.points.gte(new Decimal("e280000000"))
+	return player.points.gte(new Decimal("50000"))
 }
 
 
